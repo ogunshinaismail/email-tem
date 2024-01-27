@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Successfull Listing</title> 
+    <style>
+      :root {
+        --main-color-black: #000929;
+        --gray-50: #f7f9fa;
+        --gray-100: #edf2f5;
+        --gray-200: #d3dde3;
+        --gray-300: #bac8d1;
+        --gray-400: #8d9eb0;
+        --gray-500: #64748b;
+        --gray-600: #536580;
+        --gray-700: #384a69;
+        --gray-800: #243454;
+        --gray-900: #142140;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #F7F9FC;
+      }
+      .main-content {
+        background-color: #fff; 
+        width: 70%; 
+        margin: 0 auto; 
+        padding: 30px 40px;
+        border-radius: 8px;
+      }
+      .code-container {
+        width: 60%;
+        display: flex;
+        gap: 1rem;
+        height: 100%;
+      }
+      .code-box {
+        border: 1px solid #7065f0;
+        border-radius: 8px;
+        padding: 4px;
+        font-size: 32px;
+        width: 100%;
+        height: 100%;
+        line-height: 3;
+        text-align: center;
+        font-weight: 700;
+      }
+      .listing-detalis {
+        background: #0e085408; 
+        border-radius: 8px; 
+        padding: 10px; 
+        margin: 30px auto 10px auto;
+      }
+      .social-icons {
+        text-align: center;
+        color: var(--gray-500);
+      }
+      .footer-menu {
+        text-align: center;
+        margin-top: 1rem;
+        color: var(--gray-50);
+      }
+      @media (prefers-color-scheme: dark) {
+        body, .main-content {
+          background-color: #0D1117;
+          color: #ffffff;
+        }
+        .listing-detalis {
+            background: #ecebf3;
+        }
+        .footer-menu, .footer-menu a, .footer-menu p, .info {
+          color: #fff !important;
+        }
+      }
+    </style>
+  </head>
+  <body style="font-family: 'Plus Jakarta Sans', sans-serif">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 900px; margin: 2rem auto">
+      <tr>
+        <td>
+          <div class="main-content">
+            <div style="height: 61px; background-color: #fff; border-bottom: 4px solid #7065F0; display: flex; align-items: center; padding-left: 1rem;">
+              <img
+                src="https://res.cloudinary.com/dwaaixvxk/image/upload/v1694205989/logo_f2uyh9.png"
+                alt=""
+                style="width: 107px; height: 32px"
+              />
+            </div>
+            <h3 style="font-size: 24px; font-weight: 700; line-height: 34px; margin: 2rem 0;">
+                Successful Listing
+            </h3>
+
+            <p>Great news!🎉 Your property listing is now live. See how it looks to potential applicants by clicking the link below:</p>
+            
+            <div class="listing-detalis">
+                <table style="width: 100%;">
+                    <tr>
+                      <td>
+                        <img 
+                            src="https://res.cloudinary.com/dwaaixvxk/image/upload/v1694205674/samples/smile.jpg" 
+                            alt="Image" 
+                            style="
+                                border: 0;
+                                float: left;
+                                margin-right: 10px;
+                                display: block;
+                                outline: none;
+                                text-decoration: none;
+                                height: 70px;
+                                width: 70px;
+                                object-fit: cover;
+                                font-size: 13px;
+                                border-radius: 8px;
+                            "
+                        >
+                      </td>
+                      <td style="color: #000;">
+                        <p><b>2 Bedroom Flat</b></p>
+                        <p style="color: #00092997; margin: .4rem 0;">Ikoyi, Lagos</p>
+                        <p>
+                            <span style="margin-right: .5rem;"><b>₦2,500,000.00/yr</b></span> | 
+                            <span style="margin: 0 .5rem; color: #00092976;"><b style="color: #000;">2</b> bed </span> | 
+                            <span style="margin-left: .5rem; color: #00092976;"><b style="color: #000;">2</b>  bath</span></p>
+                      </td>
+                      <td>
+                        <a href="<%= baseurl/rentals/listing_id %>">
+                            <button
+                              class="btn"
+                              style="
+                                  background: #7065f0;
+                                  border: none;
+                                  height: 38px;
+                                  padding: 0 30px;
+                                  color: white;
+                                  font-size: 16px;
+                                  font-weight: 700;
+                                  border-radius: 8px;
+                              "
+                              >
+                                View
+                              </button>
+                          </a>
+                      </td>
+                    </tr>
+                  </table>
+            </div>
+
+            <p style="margin-top: 1.5rem;">Start engaging with interested tenants and manage your property's inquiries from your dashboard. For any assistance, reach out to our support team at <b>support@porchplus.com</b></p>
+
+            <p style="margin-top: 2rem;">- The Porchplus Team</p>
+          </div>
+
+          <table
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+            style="width: 100%; margin: 50px auto"
+          >
+            <tr>
+              <td>
+                <div class="social-icons">
+                  <a href="https://twitter.com/porchplus?s=21&t=pvQrn7gh6IYhZSkZzFNrHg">
+                    <img
+                      src="https://res.cloudinary.com/dwaaixvxk/image/upload/v1694205989/twitter_ijjnig.png"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="https://www.facebook.com/porchplus/">
+                    <img
+                      src="https://res.cloudinary.com/dwaaixvxk/image/upload/v1694205989/facebook_dshwlj.png"
+                      alt=""
+                      style="margin-left: 20px"
+                    />
+                  </a>
+
+                  <a href="https://www.instagram.com/porchplus/?igsh=MW9nYTF0bDdsY21keA%3D%3D">
+                    <img
+                      src="https://res.cloudinary.com/dwaaixvxk/image/upload/v1694205989/instagram_kjbbxb.png"
+                      alt=""
+                      style="margin-left: 20px"
+                    />
+                  </a>
+                </div>
+                
+                <div class="footer-menu">
+                  <a href="<%= link.terms %>" style="color: #536580">Privacy Policy</a>
+                  <span style="color: #536580; margin: 0 5px">|</span>
+                  <a href="<%= link.contact %>" style="color: #536580">Contact Support</a>
+                </div>
+                <div  class="info" style="text-align: center; color: #536580;">
+                  <p style="margin: .6rem 0;">A25, Admiralty Homes Estate, Igbo Efon, Lekki, Lagos</p>
+                  <p>© <span id="year"></span> Porchplus Inc.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      const currentYear = new Date().getFullYear();
+      const yearSpan = document.getElementById('year').innerHTML = currentYear;
+    </script>
+  </body>
+</html>
